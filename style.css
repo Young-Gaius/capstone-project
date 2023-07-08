@@ -46,6 +46,10 @@ nav {
   display: none !important;
 }
 
+.double-picture {
+  padding: 0 10px;
+}
+
 .nav-bottom {
   display: none;
   width: 100%;
@@ -103,7 +107,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding-right: 4rem;
     position: inherit;
     background-color: #fff;
   }
@@ -257,8 +260,6 @@ header {
 
 .master-container {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   margin-bottom: 40px;
 }
 
@@ -360,6 +361,7 @@ header {
 }
 
 .de-phote {
+  min-width: 350px;
   text-align: center;
   margin-bottom: 25px;
   background-image: url("./images/pizza.jpg");
@@ -381,7 +383,7 @@ header {
 .de-phote-content {
   display: flex;
   flex-direction: column;
-  padding: 4rem 7rem;
+  padding: 1rem;
   gap: 0;
 }
 
@@ -404,10 +406,6 @@ header {
 
 .partner {
   margin-bottom: 0;
-}
-
-.last-section {
-  background-color: #414246;
 }
 
 .sponsor-support {
@@ -596,10 +594,15 @@ header {
   }
 
   .plates {
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     width: 100%;
     gap: 2rem;
+  }
+
+  .master-container {
+    width: 45%;
   }
 
   .none {
@@ -682,6 +685,7 @@ header {
 
   .footer {
     display: flex;
+    justify-content: center;
     align-items: center;
     background-color: grey;
     gap: 4rem;
@@ -694,37 +698,60 @@ header {
     padding: 20px;
   }
 
-  /* .paragraph {
+  .last-end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    gap: 4rem;
+    font-size: 25px;
+  }
+}
+
+/* .paragraph {
     display: none;
   } */
 
-  .button-more {
-    display: none;
-  }
+/* .button-more {
+  display: none;
+} */
 
-  .last-section {
-    margin-left: 0;
-    background-color: #414246;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
+.last-end {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #414246;
+  gap: 4rem;
+  font-size: 15px;
+}
 
-  .l-img {
-    width: 15%;
-  }
+.last-section {
+  margin-left: 0;
+  background-color: #414246;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
 
-  .footers {
-    display: flex;
-    align-items: center;
-    gap: 4rem;
-    font-size: 25px;
-    margin-left: 50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    justify-content: space-around;
-  }
+.l-img {
+  width: 15%;
+}
 
-  .l-s {
-    display: none;
-  }
+.footers {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  font-size: 25px;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  justify-content: space-around;
+}
+
+.tof {
+  width: 10%;
+}
+
+.l-s {
+  display: none;
 }
