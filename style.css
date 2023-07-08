@@ -52,6 +52,7 @@ nav {
   height: 100%;
   position: fixed;
   background-color: orangered;
+  opacity: 0.9;
   top: 0;
 }
 
@@ -67,7 +68,7 @@ nav {
   display: flex;
   justify-content: flex-end;
   padding: 20px;
-  color: #fff;
+  color: white;
 }
 
 .nav-bottom ul li {
@@ -140,6 +141,8 @@ header {
   background-size: cover;
   background-blend-mode: saturation;
   background-color: #f4fbffe3;
+  display: flex;
+  flex-direction: column;
 }
 
 .hide {
@@ -168,7 +171,6 @@ header {
   margin-left: 10px;
   padding: 5px;
   line-height: 2rem;
-  text-align: center;
   margin-top: 0;
   padding-top: 15px;
 }
@@ -190,9 +192,12 @@ header {
 .vicinity {
   color: white;
   background-color: #282b32;
+  display: flex;
+  flex-direction: column;
 }
 
 .h3-vicinity {
+  font-size: 25px;
   text-align: center;
 
   /* margin-left: 40%; */
@@ -215,13 +220,14 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   padding: 5px;
   margin: 5px;
+  gap: 10px;
 }
 
 .heading {
   color: orangered;
-  padding-top: 50px;
   margin: 5px;
 }
 
@@ -230,9 +236,14 @@ header {
 }
 
 .btn {
-  padding: 15px;
+  padding: 30px;
   background-color: orangered;
   margin: 20px 90px;
+  width: 350px;
+  align-self: center;
+  color: #fff;
+  font-size: 17px;
+  border: none;
 }
 
 .menu-list {
@@ -264,7 +275,7 @@ header {
 .hr {
   padding-top: 2px;
   margin-top: 3px;
-  background-color: orangered;
+  background-color: #414246;
   width: 40px;
   margin-left: 0;
   border: 0;
@@ -277,10 +288,12 @@ header {
 }
 
 .button-more {
-  width: 50%;
-  background-color: orangered;
-  color: beige;
-  border: 5px solid white;
+  width: 70%;
+  background-color: white;
+  color: black;
+  border: 1px solid lightslategrey;
+  padding: 10px;
+  border-radius: 3px;
 }
 
 .more {
@@ -394,7 +407,7 @@ header {
 }
 
 .last-section {
-  background-color: #27374d;
+  background-color: #414246;
 }
 
 .sponsor-support {
@@ -472,8 +485,21 @@ header {
   display: none;
 }
 
+/* .see {
+  display: none;
+} */
+
 @media only screen and (min-width: 768px) {
   .hide {
+    display: none;
+  }
+
+  /* .see {
+    font-size: 30px;
+    text-align: center;
+  } */
+
+  .btn {
     display: none;
   }
 
@@ -482,6 +508,12 @@ header {
     color: white;
     display: flex;
     justify-content: flex-end;
+  }
+
+  header {
+    min-height: 70vh;
+    padding: 0 20vw 030px 10vw;
+    justify-content: center;
   }
 
   .main-nav {
@@ -550,6 +582,7 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     padding: 5px;
     margin: 5px;
     border: 2px solid orangered;
@@ -661,9 +694,9 @@ header {
     padding: 20px;
   }
 
-  .paragraph {
+  /* .paragraph {
     display: none;
-  }
+  } */
 
   .button-more {
     display: none;
