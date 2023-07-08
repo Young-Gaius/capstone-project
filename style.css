@@ -417,6 +417,7 @@ header {
 }
 
 .footer {
+  background-color: #414246;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -687,7 +688,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: grey;
+    /* background-color: grey; */
     gap: 4rem;
     font-size: 25px;
   }
